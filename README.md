@@ -11,6 +11,6 @@
 
 /wl list [页码] 分页查看白名单
 
-wl reload 重载配置和白名单
+/wl reload 重载配置和白名单
 
-wl toggle 开关白名单（全服广播）
+/wl toggle 开关白名单（全服广播）
