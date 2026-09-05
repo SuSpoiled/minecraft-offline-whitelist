@@ -1,0 +1,17 @@
+name: PaperWhitelist
+version: '${project.version}'
+main: com.example.whitelist.WhitelistPlugin
+api-version: '26.2'
+description: Paper 服务器的白名单插件
+author: PaperWhitelist
+
+commands:
+  whitelist:
+    description: Manage the server whitelist.
+    aliases:
+      - wl
+
+permissions:
+  whitelist.admin:
+    description: Allows managing the whitelist (add/remove/list/reload/toggle).
+    default: op

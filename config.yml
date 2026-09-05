@@ -1,0 +1,36 @@
+# 白名单插件配置
+
+# true 时拒绝名单外玩家加入，/wl toggle 可运行时切换
+enabled: true
+
+# ops 文件里的管理员不需要加白名单
+bypass-for-op: true
+
+# 白名单玩家，每行一个名字（3-16 位字母/数字/下划线，不区分大小写）
+# 可以直接在下面加人，例如：
+#   - Steve
+whitelist: []
+
+# 被拒时显示的信息，支持 & 颜色代码
+kick-message: "&c不在白名单内"
+
+# 拒绝事件记到控制台
+log-events: true
+
+# /wl list 每页条数
+list-page-size: 10
+
+# 提示语，支持 & 颜色代码和 %player% %total% %page% %pages% %command% 占位符
+messages:
+  no-permission: "&c你没有权限这么做。"
+  usage: "&7用法: &f%command% <add|remove|list|reload|toggle>"
+  added: "&a已将 &f%player% &a加入白名单 &7(共 &f%total% &7人)"
+  already-added: "&e%player% 已经在白名单里了。"
+  removed: "&a已将 &f%player% &a移出白名单 &7(共 &f%total% &7人)"
+  not-removed: "&e%player% 不在白名单里。"
+  not-found: "&c找不到玩家 &f%player%&c。"
+  reloaded: "&a白名单和配置已重载。"
+  now-enabled: "&6白名单已开启&a，名单外玩家无法加入。"
+  now-disabled: "&6白名单已关闭&c，所有玩家都可以加入。"
+  list-header: "&6白名单 &7(第 %page%/%pages% 页, 共 %total% 人):"
+  list-empty: "&7白名单是空的。"
